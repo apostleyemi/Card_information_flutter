@@ -11,17 +11,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.teal.shade900,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                radius: 50.0,
+                radius: 80.0,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage('images/baby.jpg'),
               ),
               Text(
-                'Emmanuel Adegbenro',
+                'Emmanuel',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
                   fontSize: 30.0,
@@ -32,15 +34,21 @@ class MyApp extends StatelessWidget {
               Text(
                 'SOFTWARE DEVELOPER',
                 style: TextStyle(
-                  color: Colors.teal.shade200,
+                  color: Colors.teal.shade100,
                   fontSize: 20.0,
                   letterSpacing: 2.5,
                   fontFamily: 'SourceSansPro',
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 200.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
@@ -63,7 +71,6 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
                 child: Padding(
                   padding: EdgeInsets.all(10),
